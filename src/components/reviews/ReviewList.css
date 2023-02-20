@@ -1,0 +1,9 @@
+.reviewContainer {
+display: flex;
+justify-content: center;
+
+}
+.reviewContainer img {
+    display: flex;
+    width: 400px;
+}
