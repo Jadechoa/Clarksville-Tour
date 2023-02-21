@@ -10,13 +10,13 @@ export const UserViews = () => {
         <Route path="/"
         element={
             <>
-<ReviewList />
             <Outlet />
             
             </>
         }
         >
-            <Route path="NewReview" element={<NewReviewForm />} />
+         <Route path="NewReview" element={<NewReviewForm />} />
+         <Route path="ReviewList" element={<ReviewList />} />
         </Route>
     </Routes>
     

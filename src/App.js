@@ -11,23 +11,21 @@ import { NewReviewForm } from './components/reviews/NewReviewForm';
 
 export const App = () => {
   return (
-  <Routes>
-<Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
-<Route path="*" element={
-  <Authorized>
-    <>
-    <NavBar />
-    <ApplicationViews />
-    </>
-  </Authorized>
-} />
+      <Route path="*" element={
+        <Authorized>
+          <>
+            <NavBar />
+            <ApplicationViews />
+          </>
+        </Authorized>
+       } />
+  </Routes >
 
+  )
 
-  </Routes>
-
-  );
 }
-
 export default App;

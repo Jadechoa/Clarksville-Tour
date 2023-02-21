@@ -15,10 +15,11 @@ export const NavBar = () => {
           </Link>
         </li>
         <li className="navbar__item">
-          <Link className="navbar__link" to="/MyReviews">
-            My Reviews
+          <Link className="navbar__link" to="/ReviewList">
+            Reviews
           </Link>
         </li>
+      
         {
                 localStorage.getItem("site_user")
                     ? <li className="navbar__item navbar__logout">
